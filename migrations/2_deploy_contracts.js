@@ -1,6 +1,5 @@
-/* eslint-disable no-undef */
-const Crowdfunding = artifacts.require('Crowdfunding');
+const BetContract = artifacts.require('BetContract');
 
 module.exports = function (deployer) {
-    deployer.deploy(Crowdfunding);
+    deployer.deploy(BetContract);
 };

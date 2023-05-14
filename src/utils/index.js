@@ -15,3 +15,13 @@ export const ethToWei = (ethAmount) => {
 export const weiToEth = (weiAmount) => {
     return window.web3.utils.fromWei(weiAmount, 'Ether');
 };
+
+export function normalizeBets(data) {
+    return data.map((result) => {
+        return {
+            id: result[0],
+            question: result[1],
+            choices: result[2],
+        };
+    });
+}
